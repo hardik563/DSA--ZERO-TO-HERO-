@@ -20,21 +20,25 @@ public class spiralPractise {
             for (int i = left; i <= right; i++) {
                 System.out.print(matrix[top][i] + " ");
             }
+            System.out.println(" ");
             top++;
             for (int i = top; i <= bottom; i++) {
                 System.out.print(matrix[i][right] + " ");
             }
+            System.out.println(" ");
             right--;
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     System.out.print(matrix[bottom][i] + " ");
                 }
+                System.out.println(" ");
                 bottom--;
             }
             if (left <= right) {
                 for (int i = bottom; i >= top; i--) {
                     System.out.print(matrix[i][left] + " ");
                 }
+                System.out.println(" ");
                 left++;
             }
         }
